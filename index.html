@@ -17,21 +17,35 @@
     <body>
        <header>
         <div class="container">
-            <section class="logo"><strong>Your</strong>
+    
+            <section class="logo">
+                <a href="index.html">
+                <strong>Your</strong>
                 <span class="blue-dot"></span>
-                <span>Logo</span></section>
+                <span>Logo</span>
+            </a>
+            </section>
             <nav>
                 <ul>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Promotions</a></li>
-                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="index.html#best-sellers-section">Best Sellers</a></li>
+                    <li><a href="index.html#newsletter-section">Newsletter</a></li>
+                    <li class="menu-icon"><img src="image/menu-icon.png" alt="menu menu-icon"></li>
                 </ul>
             </nav> 
         </div>
        </header>
 
        <section class="hero">
-        <img src="image/Hero_Large_Desktop.jpg" alt="hero image-smart watch">
+        <picture>
+
+            <source media="(max-width: 576px)" srcset="image/Hero_Mobile.jpg">
+            <source media="(max-width: 960px)" srcset="image/Hero_Tablet.jpg">
+            <source media="(max-width: 1440px)" srcset="image/Hero_Desktop.jpg">
+  
+            <img src="image/Hero_Large_Desktop.jpg" alt="hero image-smart watch">
+        </picture>
+       
        <div class="hero-content">
         <div class="container">
         <h1>Explore our new smart watch series</h1>
@@ -42,7 +56,7 @@
        </div>
        </section>
 
-        <section class="best-sellers">
+        <section class="best-sellers" id="best-sellers-section">
 
         <h2>Best Sellers</h2>
             <hr>   <!--  horizontal line -->
@@ -99,7 +113,7 @@
             
        </section>
 
-       <section class="newsletter"> 
+       <section class="newsletter" id="newsletter-section"> 
         <h3>Newsletter SignUp</h3>
         <p>Subscribe now and don't miss a single deal!</p>
 
@@ -153,4 +167,4 @@
        </footer>
     </body>
 
-</html>
+</html>  
